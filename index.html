@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation Example</title>
+    <style>
+        
+         button {
+            padding: 10px 20px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer; 
+            border-radius: 10px; 
+            border:  none;
+        }
+        
+        
+        #imageContainer {
+            margin: 20px;
+            display: block;
+           
+        }
+
+        .color-button {
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+        }
+        .img{
+            width: 600px;
+            height: 400px;  
+            margin:auto ;
+        }
+        .Container{
+            margin: auto;
+            justify-content: center;
+            display: block;
+            border: 2px solid gainsboro;
+            width:700px;
+            box-shadow: 5px rgb(110, 109, 109);
+        }
+        .button-container{
+            justify-content: space-around;
+            align-items: center;
+            margin-left:40px;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="Container">
+    <div id="imageContainer">
+        <img id="actorImage" src="./actor/keerthi.webp" alt="Actor Image" style="display:none;" class="img">
+    </div>
+     
+    <div class="button-container">
+        <button onclick="showActorImage('actor1')">Keerthi </button>
+        <button onclick="showActorImage('actor2')">Rashmika</button>
+        <button onclick="showActorImage('actor3')">Tamanna</button>
+    </div>
+    </div>
+
+    <script>
+    
+    function showActorImage(actor) {
+        const actorImage = document.getElementById('actorImage');
+        actorImage.style.display = 'block';
+        if (actor === 'actor1') {
+            actorImage.src = './actor/keerthi.webp'; 
+        } else if (actor === 'actor2') {
+            actorImage.src = './actor/rashmika mandanna.jpg'; 
+        } else if (actor === 'actor3') {
+            actorImage.src = './actor/tamanna.jpg'; 
+        }
+    }
+
+</script>
+</body>
+</html>
