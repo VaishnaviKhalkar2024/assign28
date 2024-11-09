@@ -54,11 +54,11 @@
 <body>
     <div class="Container">
     <div id="imageContainer">
-        <img id="actorImage" src="keerthi.webp" alt="Actor Image" class="img">
+        <img id="actorImage" src="./img/keerthi.webp" alt="Actor Image" class="img">
     </div>
      
     <div class="button-container">
-        <button onclick="showActorImage('actor1')">Keerthi </button>
+        <button onclick="showActorImage('actor1')"> Keerthi </button>
         <button onclick="showActorImage('actor2')">Rashmika</button>
         <button onclick="showActorImage('actor3')">Tamanna</button>
     </div>
@@ -70,11 +70,11 @@
         const actorImage = document.getElementById('actorImage');
         actorImage.style.display = 'block';
         if (actor === 'actor1') {
-            actorImage.src = 'keerthi.webp'; 
+            actorImage.src = './img/keerthi.webp'; 
         } else if (actor === 'actor2') {
-            actorImage.src = 'rashmika mandanna.jpg'; 
+            actorImage.src = './img/rashmika mandanna.jpg'; 
         } else if (actor === 'actor3') {
-            actorImage.src = 'tamanna.jpg'; 
+            actorImage.src = './img/tamanna.jpg'; 
         }
     }
 
